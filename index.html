@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mirna Portofolio</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+                background: #f4f4f4;
+            }
+            header, footer {
+                background: #0047AB;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            nav {
+                background: #343A40;
+                color: white;
+                text-align: right;
+                padding: 15px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+            section {
+                padding: 20px;
+                background: white;
+                margin: 20px;
+                border-radius: 8px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            img {
+                border-radius: 50%;
+                width: 150px;
+                display: block;
+                margin: 10px auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+            }
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin: 5px 0;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            button {
+                background: #0047AB;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+            iframe {
+                width: 100%;
+                height: 300px;
+                margin-top: 10px;
+            }
+
+            section h2 {
+                color: #0047AB;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Mirna's Portofolio</h1>
+        </header>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images\mirna.png" alt="Profile Picture", width="150">
+            <p>Hi, I'm Mirna Tarek, a passionate Flutter developer and I decided to learn Front-end to expand my knowledge, I have too ITI web open source training last summer where I learnt HTML,CSS and database. I am really excited to learn more through this course!</p>
+            <a href="cv/MirnaCv.pdf" download>
+                <button>Download My CV</button>
+            </a>            
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p> I have made many projects using Flutter but I will mention the applications that I like the most:</p>
+            <article>
+                <h3>1. Rick&Morty App</h3>
+                <p>I have used the rick&morty api in this app and I also used cubit state management and flutter offline package. Here Take a look:</p>
+                <Video width="50%" controls autoplay muted>
+            <source src="images\rick&mortyfinal.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </Video>
+            </article>
+            <article>
+                <h3>2. Hospital App</h3>
+                <p>An application that contains the database of doctors and patients where the can reserve a room or an appointment with a doctor.</p>
+            </article>
+            <article>
+                <h3>3. Cardio_care App</h3>
+                <p>This is my graduation project app where we focus on helping heart failure patients.</p>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects Table</h2>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Technologies Used</th>
+                </tr>
+                <tr>
+                    <td>Embedded-app</td>
+                    <td>a ventilator connected with a flutter app</td>
+                    <td>firebase, arduino,android studio</td>
+                </tr>
+                <tr>
+                    <td>chat app</td>
+                    <td>a simple chatting app</td>
+                    <td>Flutter, Firebase</td>
+                </tr>
+                <tr>
+                    <td>Hospital App</td>
+                    <td>Manage hospital patients</td>
+                    <td>sql, Flutter</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" required>
+                <label>Email:</label>
+                <input type="email" required>
+                <label>Message:</label>
+                <textarea required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section>
+            <h2>Watch My Video</h2>
+            <iframe src="https://www.youtube.com/embed/hOdMbeHQZfQ" allowfullscreen></iframe>
+        </section>        
+        <footer>
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/mirna-tarek-517298320/">Visit My Linked In</a>
+        </footer>
+    </body>
+</html>
